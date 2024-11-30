@@ -1,0 +1,114 @@
+.estudos {
+    transition: 200ms;
+    padding: 10px;
+    width: 100%;
+    text-align: left;
+    background-color: rgba(0, 0, 0, 0.233);
+    border-color: #004c68;
+    border-width: 1px;
+    border-style: solid;
+}
+#estudo {
+    margin-bottom: 8px;
+    gap: 8px;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+}
+
+.videoaula {
+    width: 100%;
+}
+
+.estudos:hover {
+    transition: 500ms;
+    background-color: #0a7399ab;
+}
+
+#texto-estudo {
+    text-align: justify;
+    color: rgb(212, 212, 212);
+}
+
+.tradingview-widget-container {
+    width: 90%;
+    height: 500px;
+}
+
+/*Area de anotações*/
+#coluna {
+    display: flex;
+}
+
+#anotacaoArea {
+    margin-left: 5px;
+}
+
+#anotacaoResult {
+    resize: none;
+    outline: none;
+    overflow: unset;
+    background-color: #171b26;
+    color: #d1d4dc;
+    border: 1px solid #363c4e;
+    border-radius: 2px;
+    width: 100%;
+    height: 466px;
+}
+
+#anotacaoBotao {
+    background-color: #131722;
+    color: #d1d4dc;
+    border: 1px solid #363c4e;
+    border-radius: 2px;
+    width: 100%;
+}
+#anotacaoBotao:hover {
+    transition: 200ms;
+    background-color: #21283b;
+}
+
+#tradingview_1f755 {
+    width: 100%;
+    height: 100%;
+}
+
+#hrDiv {
+    color: #d1d4dc;
+}
+
+/*Responsividade Graficos*/
+@media (max-width:768px) {
+    #coluna {
+        grid-template-columns: 1fr;
+        display: grid;
+    }
+    .tradingview-widget-container {
+        width: 100%;
+    }
+    #anotacaoArea {
+        margin-left: 0px;
+        margin-top: 5px;
+    }
+    footer {
+        margin-bottom: 60px;
+    }
+    #estudo {
+        display: block;
+    }
+}
+
+/*Responsividade*/
+@media (max-width:600px) {
+    main {
+        padding-left: 20px;
+        padding-right: 20px;
+    }
+    .estudos {
+        width: 100%;
+        display: block;
+        text-align: left;
+    }
+    .videoaula {
+        width: 100%;
+    }
+}

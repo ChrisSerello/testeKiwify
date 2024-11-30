@@ -1,0 +1,165 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ágora Finance</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="shortcut icon" href="./img/logo_nova-removebg-preview.png" type="image/x-icon">
+    <script src="./py/import.py"></script>
+    <script src="./py/script.py"></script>
+    <!--Bootstrap-->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-KK94CHFLLe+nY2dmCWGMq91rCGa5gtU4mk92HdvYe+M/SXH301p5ILy+dN9+nJOZ" crossorigin="anonymous">
+    <link rel="stylesheet" href="./estilo/index.css">
+</head>
+<body>
+    <header><!--Cabeçalho-->
+        <!--Bootstrap<img id="bols-logo" src="./img/" alt="Logo Bols"> -->
+        <nav id="nav">
+            <a href="./index.html">INICIO</a>
+            <a href="./bolsa.html">BOLSA</a>
+            <a href="./estudo.html">ESTUDO</a>
+        </nav>
+        <button id="btn-menu" onclick="abrir()"><img src="./img/menu.svg" alt="Botão Menu"></button>
+    </header>
+    <!-- Inicio Trading View -->
+    <div id="tradingview-barra" class="tradingview-widget-container">
+    <div class="tradingview-widget-container__widget"></div>
+    <script type="text/javascript" src="https://s3.tradingview.com/external-embedding/embed-widget-ticker-tape.js" async>
+    {
+    "symbols": [
+    {
+      "description": "Apple",
+      "proName": "NASDAQ:AAPL"
+    },
+    {
+      "description": "Netflix",
+      "proName": "NASDAQ:NFLX"
+    },
+    {
+      "description": "Meta",
+      "proName": "NASDAQ:META"
+    },
+    {
+      "description": "Microsoft",
+      "proName": "NASDAQ:MSFT"
+    },
+    {
+      "description": "Amazon",
+      "proName": "NASDAQ:AMZN"
+    }
+  ],
+  "showSymbolLogo": true,
+  "colorTheme": "dark",
+  "isTransparent": false,
+  "displayMode": "adaptive",
+  "locale": "br"
+}
+  </script>
+</div>
+<!-- Fim Trading View -->
+    <main>
+        <h1>Bem vindo a <strong>Ágora Finance</strong></h1>
+        <h4>"Se você almeja ser rico, pense em poupar assim como você pensa em ganhar dinheiro." - Benjamin Franklin</h4>
+        
+        <!-- Notícias -->
+        <div id="calendario">
+          <script src="https://20b7721d591e498f9686-22a90ac259bc30d5e6a957fa879612f3.ssl.cf1.rackcdn.com/widget/_xsWidget.js" type="text/javascript"></script>
+          
+        </div>
+        <p>"O sucesso não é o final, o fracasso não é fatal: o que importa é a coragem para continuar." - Winston Churchill</p> <hr>
+        <section id="acoes-test">
+        <div id="acoes">
+          <!-- TradingView Widget BEGIN -->
+          <div class="tradingview-widget-container">
+            <div class="tradingview-widget-container__widget"></div>
+            <script type="text/javascript" src="https://s3.tradingview.com/external-embedding/embed-widget-hotlists.js" async>
+            {
+            "colorTheme": "dark",
+            "dateRange": "12M",
+            "exchange": "US",
+            "showChart": true,
+            "locale": "br",
+            "width": "100%",
+            "height": "100%",
+            "largeChartUrl": "",
+            "isTransparent": false,
+            "showSymbolLogo": true,
+            "showFloatingTooltip": false,
+            "plotLineColorGrowing": "rgba(41, 98, 255, 1)",
+            "plotLineColorFalling": "rgba(41, 98, 255, 1)",
+            "gridLineColor": "rgba(42, 46, 57, 0)",
+            "scaleFontColor": "rgba(134, 137, 147, 1)",
+            "belowLineFillColorGrowing": "rgba(41, 98, 255, 0.12)",
+            "belowLineFillColorFalling": "rgba(41, 98, 255, 0.12)",
+            "belowLineFillColorGrowingBottom": "rgba(41, 98, 255, 0)",
+            "belowLineFillColorFallingBottom": "rgba(41, 98, 255, 0)",
+            "symbolActiveColor": "rgba(41, 98, 255, 0.12)"
+          }
+            </script>
+          </div>
+          <!-- TradingView Widget END -->
+        </div>
+        <div id="test-text">
+          <h5>Invista seu futuro desde cedo</h5>
+          <p id="test-p">Você é jovem e já está pensando em investir? Excelente escolha! Começar a investir desde cedo é uma das melhores formas de garantir um futuro financeiro próspero e seguro.<br><br>
+
+            O mercado de investimentos pode parecer um universo complexo, mas também é cheio de oportunidades. Com tantas opções, é essencial entender os diferentes tipos de investimentos, seus riscos e potenciais de retorno antes de dar o primeiro passo.
+
+            <br><br>
+            <b>Comece Pequeno, Pense Grande.</b>
+            <br>
+            Não é preciso investir muito dinheiro para começar. Mesmo com um pequeno valor, você já pode começar a construir seu patrimônio.
+            <br>
+            Não precisa ter uma fortuna para começar a investir. Com apenas $100, você já pode dar o pontapé inicial na construção do seu patrimônio. Sim, é isso mesmo! Existem várias opções de investimentos acessíveis para quem está começando.
+            <br><br>
+            <b>Trace Seus Objetivos</b>
+            <br>
+            Por que você quer investir? Seja para realizar o sonho de comprar um carro, viajar pelo mundo ou até antecipar a sua aposentadoria, definir objetivos claros é o segredo para escolher os melhores investimentos.
+            <br>
+            Se você quer comprar um carro em dois anos, por exemplo, você precisará escolher um investimento com alta rentabilidade. Se você quer se aposentar mais cedo, você precisará escolher um investimento com baixo risco.
+            <br><br>
+            <b>Diversifique e Proteja Seu Dinheiro</b>
+            <br>
+            Nunca coloque todos os seus recursos em um único tipo de investimento. A palavra mágica é diversificação! Ao espalhar seu dinheiro em diferentes ativos, você reduz riscos e maximiza suas chances de bons retornos. Assim, mesmo que um setor esteja em baixa, outros podem compensar e equilibrar sua carteira.
+            <br>
+        </section>
+    </main>
+    <section id="news" class="container mt-5">
+      <h2>Descubra tudo o que você precisa saber!</h2>
+      <p>Após mais de 6 anos de estudo e prática, <i> <strong>A bolsa de valores</i> é um guia completo para quem deseja dar os primeiros passos no mundo dos investimentos, construir patrimônio, conquistar a liberdade financeira e alcançar a tão sonhada independência por meio de renda passiva.</strong>
+        <br>
+        Junte-se a centenas de alunos que partiram do zero e agora investem com confiança e sucesso!</p>
+      <div id="calendar-widget">
+          <script src="https://ssl.widgetwebsite.com/embed/calendar.js"></script>
+      </div>
+  </section>
+
+  <section id="news" class="container mt-5">
+    <h2>Invista no Seu Futuro</h2>
+      <p>Começar a investir cedo é uma das melhores decisões financeiras que você pode tomar...</p>
+  </section>
+
+  <div class="row">
+    <section class="ebook-section" id="ebook">
+      <div class="ebook-content">
+          <video controls>
+              <source src="img/img_capa_mexendo.mp4" type="video/mp4">
+              Seu navegador não suporta vídeos.
+          </video>
+          <div class="ebook-info">
+              <h2>Guia Completo de Criptomoedas</h2>
+              <p>Domine o mercado de criptomoedas com nosso guia detalhado, perfeito para iniciantes e investidores experientes.</p>
+              <a href="https://pay.kiwify.com.br/QUEM4I0" target="_blank" class="cta-button">Adquirir Agora</a>
+          </div>
+      </div>
+    </section>
+  </div>
+    
+    <!--Menu-->
+    <script src="./script/menu.js"></script>
+    <!--Bootstrap--> <br> <br>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha3/dist/js/bootstrap.bundle.min.js" integrity="sha384-ENjdO4Dr2bkBIFxQpeoTz1HIcje39Wm4jDKdf19U8gI4ddQ3GYNS7NTKfAdVQSZe" crossorigin="anonymous"></script>
+</body>
+</html>

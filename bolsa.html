@@ -1,0 +1,176 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ágora Finance</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="./estilo/bolsa.css">
+    <link rel="shortcut icon" href="./img/logo_nova-removebg-preview.png" type="image/x-icon">
+    <!--Bootstrap-->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-KK94CHFLLe+nY2dmCWGMq91rCGa5gtU4mk92HdvYe+M/SXH301p5ILy+dN9+nJOZ" crossorigin="anonymous">
+</head>
+<body>
+    <header><!--Cabeçalho-->
+        
+        <nav id="nav">
+            <a href="./index.html">INICIO</a>
+            <a href="./bolsa.html">BOLSA</a>
+            <a href="./estudo.html">ESTUDO</a>
+        </nav>
+        <button id="btn-menu" onclick="abrir()"><img src="./img/menu.svg" alt="Botão Menu"></button>
+    </header>
+    <!-- Inicio Trading View -->
+    <div id="tradingview-barra" class="tradingview-widget-container">
+        <div class="tradingview-widget-container__widget"></div>
+        <script type="text/javascript" src="https://s3.tradingview.com/external-embedding/embed-widget-ticker-tape.js" async>
+        {
+        "symbols": [
+        {
+          "description": "Apple",
+          "proName": "NASDAQ:AAPL"
+        },
+        {
+          "description": "Netflix",
+          "proName": "NASDAQ:NFLX"
+        },
+        {
+          "description": "Meta",
+          "proName": "NASDAQ:META"
+        },
+        {
+          "description": "Microsoft",
+          "proName": "NASDAQ:MSFT"
+        },
+        {
+          "description": "Amazon",
+          "proName": "NASDAQ:AMZN"
+        }
+      ],
+      "showSymbolLogo": true,
+      "colorTheme": "dark",
+      "isTransparent": false,
+      "displayMode": "adaptive",
+      "locale": "br"
+    }
+      </script>
+    </div>
+    <!-- Fim Trading View -->
+    <main><!--Ativos-->
+        <h1>Bolsa de Valores</h1>
+        <section id="sec-ativos">
+            <div class="sec-ativos" id="ativos-mglu3"><!--MGLU3-->
+              <img class="img-ativos" id="ativos-mglu3-img" src="./img/bolsa/mglu.png" alt="Ativo Magalu">
+              <h5 class="text-ativos">MGLU3</h5>
+              <a href='https://br.tradingview.com/symbols/BMFBOVESPA-MGLU3/' target="_blank"><button class="button-ativos">Detalhes</button></a>
+            </div>
+            <div class="sec-ativos" id="ativos-petr4"><!--PETR4-->
+              <img class="img-ativos" id="ativos-petr4-img" src="./img/bolsa/petr4.png" alt="Ativo Petr">
+              <h5 class="text-ativos">PETR4</h5>
+              <a href='https://br.tradingview.com/symbols/BMFBOVESPA-PETR4/' target="_blank"><button class="button-ativos">Detalhes</button></a>
+            </div>
+            <div class="sec-ativos" id="ativos-vale3"><!--VALE3-->
+              <img class="img-ativos" id="ativos-vale3-img" src="./img/bolsa/vale3.png" alt="Ativo Petr">
+              <h5 class="text-ativos">VALE3</h5>
+              <a href='https://br.tradingview.com/symbols/BMFBOVESPA-VALE3/' target="_blank"><button class="button-ativos">Detalhes</button></a>
+            </div>
+            <div class="sec-ativos" id="ativos-NFLX34"><!--NFLX34-->
+              <img class="img-ativos" id="ativos-vale3-img" src="./img/bolsa/nflx34.png" alt="Ativo Petr">
+              <h5 class="text-ativos">NFLX34</h5>
+              <a href='https://br.tradingview.com/symbols/BMFBOVESPA-NFLX34/' target="_blank"><button class="button-ativos">Detalhes</button></a>
+            </div>
+            <div class="sec-ativos" id="ativos-AAPL34"><!--AAPL34-->
+              <img class="img-ativos" id="ativos-vale3-img" src="./img/bolsa/aapl34.png" alt="Ativo Petr">
+              <h5 class="text-ativos">AAPL34</h5>
+              <a href='https://br.tradingview.com/symbols/BMFBOVESPA-AAPL34/' target="_blank"><button class="button-ativos">Detalhes</button></a>
+            </div>
+            <div class="sec-ativos" id="ativos-ABEV3"><!--ABEV3-->
+              <img class="img-ativos" id="ativos-vale3-img" src="./img/bolsa/abev3.png" alt="Ativo Petr">
+              <h5 class="text-ativos">ABEV3</h5>
+              <a href='https://br.tradingview.com/symbols/BMFBOVESPA-ABEV3/' target="_blank"><button class="button-ativos">Detalhes</button></a>
+            </div>
+            <div class="sec-ativos" id="ativos-BBAS3"><!--BBAS3-->
+              <img class="img-ativos" id="ativos-BBAS3-img" src="./img/bolsa/bbas3.png" alt="Ativo Petr">
+              <h5 class="text-ativos">BBAS3</h5>
+              <a href='https://br.tradingview.com/symbols/BMFBOVESPA-BBAS3/' target="_blank"><button class="button-ativos">Detalhes</button></a>
+            </div>
+            <div class="sec-ativos" id="ativos-ABEV3"><!--RAIL3-->
+              <img class="img-ativos" id="ativos-vale3-img" src="./img/bolsa/rail3.png" alt="Ativo Petr">
+              <h5 class="text-ativos">RAIL3</h5>
+              <a href='https://br.tradingview.com/symbols/BMFBOVESPA-RAIL3/' target="_blank"><button class="button-ativos">Detalhes</button></a>
+            </div>
+            <div class="sec-ativos" id="ativos-ABEV3"><!--ITSA4-->
+              <img class="img-ativos" id="ativos-vale3-img" src="./img/bolsa/itsa4.png" alt="Ativo Petr">
+              <h5 class="text-ativos">ITSA4</h5>
+              <a href='https://br.tradingview.com/symbols/BMFBOVESPA-ITSA4/' target="_blank"><button class="button-ativos">Detalhes</button></a>
+            </div>
+            <div class="sec-ativos" id="ativos-ABEV3"><!--ITSA4-->
+              <img class="img-ativos" id="ativos-vale3-img" src="./img/bolsa/adbe34.png" alt="Ativo Petr">
+              <h5 class="text-ativos">ADBE34</h5>
+              <a href='https://br.tradingview.com/symbols/BMFBOVESPA-ADBE34/' target="_blank"><button class="button-ativos">Detalhes</button></a>
+            </div>
+            <div class="sec-ativos" id="ativos-ABEV3"><!--ITSA4-->
+              <img class="img-ativos" id="ativos-vale3-img" src="./img/bolsa/elet3.png" alt="Ativo Petr">
+              <h5 class="text-ativos">ELET3</h5>
+              <a href='https://br.tradingview.com/symbols/BMFBOVESPA-ELET3/' target="_blank"><button class="button-ativos">Detalhes</button></a>
+            </div>
+            <div class="sec-ativos" id="ativos-ABEV3"><!--ITSA4-->
+              <img class="img-ativos" id="ativos-vale3-img" src="./img/bolsa/sanb3.png" alt="Ativo Petr">
+              <h5 class="text-ativos">SANB3</h5>
+              <a href='https://br.tradingview.com/symbols/BMFBOVESPA-SANB3/' target="_blank"><button class="button-ativos">Detalhes</button></a>
+            </div>
+            <div class="sec-ativos" id="ativos-ABEV3"><!--ITSA4-->
+              <img class="img-ativos" id="ativos-vale3-img" src="./img/bolsa/bpac3.png" alt="Ativo Petr">
+              <h5 class="text-ativos">BPAC3</h5>
+              <a href='https://br.tradingview.com/symbols/BMFBOVESPA-BPAC3/' target="_blank"><button class="button-ativos">Detalhes</button></a>
+            </div>
+            <div class="sec-ativos" id="ativos-ABEV3"><!--ITSA4-->
+              <img class="img-ativos" id="ativos-vale3-img" src="./img/bolsa/tims3.png" alt="Ativo Petr">
+              <h5 class="text-ativos">TIMS3</h5>
+              <a href='https://br.tradingview.com/symbols/BMFBOVESPA-TIMS3/' target="_blank"><button class="button-ativos">Detalhes</button></a>
+            </div>
+            <div class="sec-ativos" id="ativos-ABEV3"><!--ITSA4-->
+              <img class="img-ativos" id="ativos-vale3-img" src="./img/bolsa/cash3.png" alt="Ativo Petr">
+              <h5 class="text-ativos">CASH3</h5>
+              <a href='https://br.tradingview.com/symbols/BMFBOVESPA-CASH3/' target="_blank"><button class="button-ativos">Detalhes</button></a>
+            </div>
+            <div class="sec-ativos" id="ativos-ABEV3"><!--ITSA4-->
+              <img class="img-ativos" id="ativos-vale3-img" src="./img/bolsa/cxse3.png" alt="Ativo Petr">
+              <h5 class="text-ativos">CXSE3</h5>
+              <a href='https://br.tradingview.com/symbols/BMFBOVESPA-CXSE3/' target="_blank"><button class="button-ativos">Detalhes</button></a>
+            </div>
+        </section>
+        <!-- TradingView Widget BEGIN -->
+        <div id="tradingview-mercado">
+        <div id="tradingview-mercado" class="tradingview-widget-container">
+          <div class="tradingview-widget-container__widget"></div>
+            <script type="text/javascript" src="https://s3.tradingview.com/external-embedding/embed-widget-stock-heatmap.js" async>
+            {
+            "exchanges": [],
+            "dataSource": "SPX500",
+            "grouping": "sector",
+            "blockSize": "market_cap_basic",
+            "blockColor": "change",
+            "locale": "br",
+            "symbolUrl": "",
+            "colorTheme": "dark",
+            "hasTopBar": false,
+            "isDataSetEnabled": false,
+            "isZoomEnabled": true,
+            "hasSymbolTooltip": true,
+            "width": "100%",
+            "height": "100%"
+          }
+          </script>
+        </div>
+      </div>
+        <!-- TradingView Widget END -->
+    </main> 
+    <br> <br>
+    <!--Menu-->
+    <script src="./script/menu.js"></script>
+    <!--Bootstrap-->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha3/dist/js/bootstrap.bundle.min.js" integrity="sha384-ENjdO4Dr2bkBIFxQpeoTz1HIcje39Wm4jDKdf19U8gI4ddQ3GYNS7NTKfAdVQSZe" crossorigin="anonymous"></script>
+</body>
+</html>
