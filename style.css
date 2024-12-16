@@ -8,7 +8,7 @@ body {
 header {
     position: fixed;
     text-align: center;
-    background-color: white;
+    background-color: rgb(255, 255, 255);
     height: 60px;
     width: 100%;
     z-index: 1;
@@ -272,7 +272,7 @@ body::-webkit-scrollbar-thumb:hover {
 #news h2 {
     font-size: 2.5rem; /* Tamanho grande para destaque */
     font-weight: bold;
-    margin-bottom: 20px;
+    margin-bottom: 30px;
     color: #8ec6ff; /* Azul claro */
     text-transform: uppercase; /* Letras maiúsculas */
 }
@@ -359,3 +359,37 @@ body::-webkit-scrollbar-thumb:hover {
 #ebook .cta-button:hover {
     background-color: #d65a00; /* Laranja mais escuro */
 }
+
+.description-box {
+    padding: 10px; /* Aumenta o padding */
+    line-height: 1.8; /* Aumenta o espaçamento entre as linhas */
+    text-align: justify; /* Justifica o texto */
+    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.1); /* Sombra mais intensa */
+    border-radius: 10px; /* Bordas arredondadas */
+    /*border: 2px solid #2a2175; /* Borda sutil com cor de destaque */
+    margin-top: 30px; /* Distância do título */
+}
+.description-box p {
+    color: #bbb;
+}
+
+
+/*ESTILIZAÇÃO DA PARTE DOS TEXTOS DE INVESTIMENTOS*/
+.text-box {
+    background-color: #022d3d;
+    padding: 5px;
+    margin-bottom: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    border-radius: 10px;
+  }
+  .text-box h2 {
+    color: #0056b3;
+    font-size: 1.8em;
+    margin-bottom: 10px;
+    color: #c7c6c6;
+  }
+  .text-box p {
+    font-size: 1.0em;
+    line-height: 1.6;
+    color: #bbb;
+  }
